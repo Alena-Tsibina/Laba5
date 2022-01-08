@@ -5,9 +5,7 @@ import java.io.*;
 public class FileNotFound {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		// TODO Auto-generated method stub
 			try {
-				//PrintStream out = new PrintStream(new File("C:\\data.txt"));
 				PrintStream out = new PrintStream(new File(".\\data.txt"));
 				out.printf("conversion from decimal number system to quaternary:\n");
 				for (int k = 1; k < 20; k++)
@@ -47,7 +45,6 @@ public class FileNotFound {
 					out.printf(" in reflex fourth code\n");
 					
 				}
-				//out.printf("");
 				out.close();
 			}
 			catch (FileNotFoundException ex) {
